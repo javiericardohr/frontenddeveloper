@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        article p{color:blueviolet}
+        div p{color:brown}
+        section + div{color:chocolate}
+        section ~ aside{color:rgb(134, 32, 218)}
+    </style>
+</head>
+<body>
+    <article>
+        <p>Hello World</p>
+        <p>we are testing with descendiente</p>
+    </article>
+    
+    <div>
+        <p>how are you</p>
+        <p>nice to meet you</p>
+    </div>
+    <p>dividir o separar para no confundir</p>
+    <section>
+        <h1>this is a test</h1>
+    </section>
+    <aside>other test</aside>
+    <aside>otra prueba en es</aside>
+    <aside>ya el estilo no aplica en estas dos ultimas</aside>
+    <aside>pero si utilizamos ~ </aside>
+    <article>
+        this is other test 
+    </article>
+    <div>all go exit with the some color</div>
+    <div>puedes validar que todos los div</div>
+    <div>tambien lo toma</div>
+</body>
+</html>
