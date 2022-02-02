@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: space-between;
+            background: aqua;
+        }
+        .container2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: papayawhip;
+        }
+        .item{
+            width: 100px;
+            height:20px;
+            background: blue;
+
+        }
+        .container .item:nth-child(2n + 1){
+            background: chartreuse;
+
+        }
+        .container .item:nth-child(4){
+            background: yellow;
+        }
+        /* otros conceptos que podemos utilizar   */
+
+        .item2{
+            width: 100px;
+            height:20px;
+            background: blue;
+
+        }
+        .container2 .item2:nth-child(2n + 1){
+            background:coral;
+
+        }
+        .container2 .item2:nth-child(4){
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+    <p>otro contenedor con hijo utilizando el centrado</p>
+    <div class="container2">
+        <div class="item2"></div>
+        <div class="item2"></div>
+        <div class="item2"></div>
+        <div class="item2"></div>
+    </div>
+</body>
+</html>
