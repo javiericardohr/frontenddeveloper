@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Form Password</title>
+    <style>
+        :root{
+            --while: #FFFFFF;
+            --BLACK: #000000;
+            --very-light-pink: #C7C7C7;
+            --hospital-green: #79be8e;
+            --text-input-fiel: #F7F7F7;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+        
+        body{
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+        .login{
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        .form-container{
+            width: 300px;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+        }
+        .logo{
+            width: 150px;
+            margin-bottom: 48px;
+            /* sirve para centrar el logo justify-self: center */
+            justify-self: center;
+            /* para ocultar el logo para escritorio y que aparesca en celulares 
+            debemos ocultar el logo*/
+            display: none;
+
+        }
+        
+        .label{
+            font-size: var(--sm);
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+        .input{
+            background-color: var(--text-input-fiel);
+            border: none;
+            border-radius: 8px;
+            height: 32px;
+            font-size: var(--md);
+            padding: 6px;
+            margin-bottom: 12px;
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+        }
+        .primary-button{
+            background-color: var(--hospital-green);
+            border-radius: 8px;
+            border: none;
+            color: var(--while);
+            width: 100%;
+            cursor: pointer;
+            font-size: var(--md);
+            font-weight: bold;
+            height: 30px;
+        }
+        .login-button{
+            margin-top: 14px;
+            margin-bottom: 30px;
+        }
+        @media (max-width:640px){
+            .logo{
+                display: block;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="login">
+        <div class="form-container">
+            <img src="./logos/logo_yard_sale.svg" alt="logo" class="logo">
+
+            
+            <form action="/" class="form">
+                <label for="email" class="label">Email Address</label>
+                <input type="text" id="email" placeholder="javier@yahoo.com" class="input input-email">
+
+                <label for="password" class="label">Password</label>
+                <input type="password" id="password" placeholder="******" class="input input-password">
+                <input type="submit" value="Confirm" class="primary-button login-button">
+                <a href="/">Forgot my password</a>
+
+            </form>
+            <button class="secodary-button sigup-button">Sign Up</button>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
