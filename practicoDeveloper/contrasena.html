@@ -60,15 +60,38 @@
             padding: 6px;
             margin-bottom: 12px;
         }
+        .input-email{
+            margin-bottom: 22px;
+        }
         .form{
             display: flex;
             flex-direction: column;
         }
+        .form a{
+            text-align: center;
+            text-decoration: none;
+            margin-bottom: 52px;
+            color: var(--hospital-green);
+            font-size: var(--sm);
+
+        }
+
         .primary-button{
             background-color: var(--hospital-green);
             border-radius: 8px;
             border: none;
             color: var(--while);
+            width: 100%;
+            cursor: pointer;
+            font-size: var(--md);
+            font-weight: bold;
+            height: 30px;
+        }
+        .secodary-button{
+            background-color: var(--while);
+            border-radius: 8px;
+            border: 1px solid var(--hospital-green);
+            color: var(--hospital-green);
             width: 100%;
             cursor: pointer;
             font-size: var(--md);
@@ -99,7 +122,7 @@
 
                 <label for="password" class="label">Password</label>
                 <input type="password" id="password" placeholder="******" class="input input-password">
-                <input type="submit" value="Confirm" class="primary-button login-button">
+                <input type="submit" value="Log in" class="primary-button login-button">
                 <a href="/">Forgot my password</a>
 
             </form>
