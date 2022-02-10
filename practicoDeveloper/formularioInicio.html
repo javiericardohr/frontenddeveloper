@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Form Inicio</title>
+    <style>
+        :root{
+            --while: #FFFFFF;
+            --BLACK: #000000;
+            --very-light-pink: #C7C7C7;
+            --hospital-green: #79be8e;
+            --text-input-fiel: #F7F7F7;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+        
+        body{
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+        .card-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fill,240px);
+            /* gap nos permite tener un espacio entre las imagenes */
+            gap: 26px;
+        }
+        .producto-card{
+            width: 240px;
+        }
+        .producto-card img{
+            width: 240px;
+            height: 240px;
+            border-radius: 20px;
+            /* para mejora la calidad de la imagen */
+            object-fit: cover;
+        }
+        .product-info{
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+
+        }
+        .product-info figure img{
+            width: 35px;
+            height: 35px;
+        }
+        .product-info figure{
+            margin: 0;;
+        }
+        @media (max-width:640px){
+            .card-container{
+                display: grid;
+                grid-template-columns: repeat(auto-fill,140px);
+                /* gap nos permite tener un espacio entre las imagenes */
+                gap: 26px;
+            }
+            .producto-card{
+                width: 140px;
+            }
+            .producto-card img{
+                width: 140px;
+                height: 140px;
+                
+            }
+        }
+            .product-info div p:nth-child(1){
+                font-weight: bold;
+                font-size: var(--md);
+                margin-top: 16px;
+                margin-bottom: 4px;
+            }
+            .product-info div p:nth-child(2){
+                font-size: var(--sm);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+    </style>
+</head>
+<body>
+    <section class="main-container">
+        <!-- este div es para poder centrar las card -->
+        <div class="card-container">
+            <!-- creamos otra div cara crear cada una de las card -->
+            
+            <div class="producto-card">
+                <!-- dentro de esta vamos a estilizar nuestras card -->
+                <img src="https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                <!-- creamos otro div que nos va permitir colocar los datos de abajo de la imagen por tal motivo tenemos colocar
+                     dos cajitas, una que va tener los textos y otra el logo, vamos a utilizar flexborx para la separacion -->
+
+
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Bike</p>
+
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                    
+                </div>
+                
+
+
+            </div>
+
+            <div class="producto-card">
+                <!-- dentro de esta vamos a estilizar nuestras card -->
+                <img src="https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                <!-- creamos otro div que nos va permitir colocar los datos de abajo de la imagen por tal motivo tenemos colocar
+                     dos cajitas, una que va tener los textos y otra el logo, vamos a utilizar flexborx para la separacion -->
+
+
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Bike</p>
+
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                    
+                </div>
+                
+
+
+            </div>
+            <div class="producto-card">
+                <!-- dentro de esta vamos a estilizar nuestras card -->
+                <img src="https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                <!-- creamos otro div que nos va permitir colocar los datos de abajo de la imagen por tal motivo tenemos colocar
+                     dos cajitas, una que va tener los textos y otra el logo, vamos a utilizar flexborx para la separacion -->
+
+
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Bike</p>
+
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                    
+                </div>
+                
+
+
+            </div>
+            <div class="producto-card">
+                <!-- dentro de esta vamos a estilizar nuestras card -->
+                <img src="https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                <!-- creamos otro div que nos va permitir colocar los datos de abajo de la imagen por tal motivo tenemos colocar
+                     dos cajitas, una que va tener los textos y otra el logo, vamos a utilizar flexborx para la separacion -->
+
+
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Bike</p>
+
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                    
+                </div>
+                
+
+
+            </div>
+            <div class="producto-card">
+                <!-- dentro de esta vamos a estilizar nuestras card -->
+                <img src="https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                <!-- creamos otro div que nos va permitir colocar los datos de abajo de la imagen por tal motivo tenemos colocar
+                     dos cajitas, una que va tener los textos y otra el logo, vamos a utilizar flexborx para la separacion -->
+
+
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Bike</p>
+
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                    
+                </div>
+                
+
+
+            </div>
+            <div class="producto-card">
+                <!-- dentro de esta vamos a estilizar nuestras card -->
+                <img src="https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                <!-- creamos otro div que nos va permitir colocar los datos de abajo de la imagen por tal motivo tenemos colocar
+                     dos cajitas, una que va tener los textos y otra el logo, vamos a utilizar flexborx para la separacion -->
+
+
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Bike</p>
+
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                    
+                </div>
+                
+
+
+            </div>
+            <div class="producto-card">
+                <!-- dentro de esta vamos a estilizar nuestras card -->
+                <img src="https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                <!-- creamos otro div que nos va permitir colocar los datos de abajo de la imagen por tal motivo tenemos colocar
+                     dos cajitas, una que va tener los textos y otra el logo, vamos a utilizar flexborx para la separacion -->
+
+
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Bike</p>
+
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                    
+                </div>
+                
+
+
+            </div>
+            <div class="producto-card">
+                <!-- dentro de esta vamos a estilizar nuestras card -->
+                <img src="https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                <!-- creamos otro div que nos va permitir colocar los datos de abajo de la imagen por tal motivo tenemos colocar
+                     dos cajitas, una que va tener los textos y otra el logo, vamos a utilizar flexborx para la separacion -->
+
+
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Bike</p>
+
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                    
+                </div>
+                
+
+
+            </div>
+            <div class="producto-card">
+                <!-- dentro de esta vamos a estilizar nuestras card -->
+                <img src="https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                <!-- creamos otro div que nos va permitir colocar los datos de abajo de la imagen por tal motivo tenemos colocar
+                     dos cajitas, una que va tener los textos y otra el logo, vamos a utilizar flexborx para la separacion -->
+
+
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Bike</p>
+
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                    
+                </div>
+                
+
+
+            </div>
+            <div class="producto-card">
+                <!-- dentro de esta vamos a estilizar nuestras card -->
+                <img src="https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                <!-- creamos otro div que nos va permitir colocar los datos de abajo de la imagen por tal motivo tenemos colocar
+                     dos cajitas, una que va tener los textos y otra el logo, vamos a utilizar flexborx para la separacion -->
+
+
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Bike</p>
+
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                    
+                </div>
+                
+
+
+            </div>
+            <div class="producto-card">
+                <!-- dentro de esta vamos a estilizar nuestras card -->
+                <img src="https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                <!-- creamos otro div que nos va permitir colocar los datos de abajo de la imagen por tal motivo tenemos colocar
+                     dos cajitas, una que va tener los textos y otra el logo, vamos a utilizar flexborx para la separacion -->
+
+
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Bike</p>
+
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                    
+                </div>
+                
+
+
+            </div>
+            <div class="producto-card">
+                <!-- dentro de esta vamos a estilizar nuestras card -->
+                <img src="https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                <!-- creamos otro div que nos va permitir colocar los datos de abajo de la imagen por tal motivo tenemos colocar
+                     dos cajitas, una que va tener los textos y otra el logo, vamos a utilizar flexborx para la separacion -->
+
+
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Bike</p>
+
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                    
+                </div>
+                
+
+
+            </div>
+            <div class="producto-card">
+                <!-- dentro de esta vamos a estilizar nuestras card -->
+                <img src="https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                <!-- creamos otro div que nos va permitir colocar los datos de abajo de la imagen por tal motivo tenemos colocar
+                     dos cajitas, una que va tener los textos y otra el logo, vamos a utilizar flexborx para la separacion -->
+
+
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Bike</p>
+
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                    
+                </div>
+                
+
+
+            </div>
+            <div class="producto-card">
+                <!-- dentro de esta vamos a estilizar nuestras card -->
+                <img src="https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                <!-- creamos otro div que nos va permitir colocar los datos de abajo de la imagen por tal motivo tenemos colocar
+                     dos cajitas, una que va tener los textos y otra el logo, vamos a utilizar flexborx para la separacion -->
+
+
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Bike</p>
+
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                    
+                </div>
+                
+
+
+            </div>
+            <div class="producto-card">
+                <!-- dentro de esta vamos a estilizar nuestras card -->
+                <img src="https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                <!-- creamos otro div que nos va permitir colocar los datos de abajo de la imagen por tal motivo tenemos colocar
+                     dos cajitas, una que va tener los textos y otra el logo, vamos a utilizar flexborx para la separacion -->
+
+
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Bike</p>
+
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                    
+                </div>
+                
+
+
+            </div>
+            <div class="producto-card">
+                <!-- dentro de esta vamos a estilizar nuestras card -->
+                <img src="https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                <!-- creamos otro div que nos va permitir colocar los datos de abajo de la imagen por tal motivo tenemos colocar
+                     dos cajitas, una que va tener los textos y otra el logo, vamos a utilizar flexborx para la separacion -->
+
+
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Bike</p>
+
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                    
+                </div>
+                
+
+
+            </div>
+
+            
+ 
+                
+        </div>
+
+    </section>
+</body>
+</html>
